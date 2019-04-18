@@ -1,0 +1,21 @@
+	Main file: baza.m
+
+	Functii auxiliare:
+-> adunare_vectori: function rez = adunare_vectori(v1, v2)
+	Primeste ca parametrii doi vectori si aduna vectorul v2 la vectorul v1.
+
+-> impartire_vector_scalar: function [rest vector] = impartire_vector_scalar(vector, scalar)
+	Primeste ca parametrii un vector si un scalar; returneaza restul impartirii si catul.
+
+-> inmultire_vector_scalar: function rezultat = inmultire_vector_scalar(vector, scalar)
+	Primeste ca parametrii un vector si un scalar; returneaza rezultatul sub forma de vector.
+
+-> nr_to_vector: function nr = nr_to_vector(sursa)
+	Primeste ca parametru un string si returneaza un vector cu elementele stringului.
+
+	Algoritmul de rezolvare este structurat in doua parti:
+1. Transform numarul initial din baza b1 in baza 10.
+2. Transform numarul din baza 10 in baza b2.
+
+Am reprezentat string-ul [sursa] sub forma unui vector, pentru a putea lucra cu stringuri
+(numere) de dimensiuni mari.
